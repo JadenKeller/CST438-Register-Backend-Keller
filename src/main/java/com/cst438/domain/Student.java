@@ -17,7 +17,14 @@ public class Student {
 	private String status;
 	
 	public Student() {
+		this(null, null);
+	}
+
+	public Student(String email, String name){
 		super();
+		setEmail(email);
+		setName(name);
+		setStatusCode(0);
 	}
 	
 	public int getStudent_id() {
